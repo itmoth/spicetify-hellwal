@@ -1,102 +1,22 @@
-<table>
-  <tr>
-    <td>
-      <img align="right" src="./images/preview.png" alt="Preview" width="50%">
-      <div align="center">
-        <img align="center" src="https://i.imgur.com/gWx75QA.png" alt="Logo" width="70" height="90">
-        <h3 align="center">Comfy Spicetify</h3>
-        <p align="center">Stay comfy while listening to music</p>
-        <a href="https://github.com/Comfy-Themes/Spicetify/issues">Report an issue</a> ・ <a href="https://discord.gg/comfy-camp-811203761619337259">Join the support server</a> ・
-        <a href="Comfy/README.md">Preview images</a>
-      </div>
-      <hr>
-      <h4> ✅ Recommended</h4>
-        <li>🔥 Spicetify: <code><a href="https://github.com/spicetify/spicetify-cli/releases/tag/v2.38.3">2.38.5</a></code></li>
-        <li>🟢 Spotify: <code><a href="https://docs.google.com/spreadsheets/d/1wztO1L4zvNykBRw7X4jxP8pvo11oQjT0O5DvZ_-S4Ok/edit#gid=803394557&range=D2">1.2.51</a></code></li>
-      <hr>
-    </td>
-  </tr>
-</table>
+# Installation
 
-### 📥 Automatic Installation
+Clone this repository.
 
----
-
-Windows -> **PowerShell**:
-
-```powershell
-iwr -useb https://raw.githubusercontent.com/NYRI4/Comfy-spicetify/main/install.ps1 | iex
+```
+https://github.com/itmoth/spicetify-hellwal.git
 ```
 
-macOS and Linux -> **Bash**:
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/NYRI4/Comfy-spicetify/main/install.sh | sh
+Run the following command.
+```
+spicetify config color_scheme hellwal
 ```
 
-### 📥 Manual Installation
+Move ```hellwal_spicetify.sh``` to wherever you like to put your scripts, and make it executable with ```chmod +x hellwal_spicetify.sh```. This very simple script copies the color.ini file in your cache and copies it to the Comfy theme's folder. 
 
----
+Move ```color.ini``` to ```~/.config/hellwal/templates/```
 
-### Downloading Comfy.
+If you are using waypaper, in ```~/.config/waypaper/config.ini```, in the post command section, add a command that runs ```hellwal_spicetify.sh```. I have included my waypaper config.ini as an example. 
 
-CD into your `Themes` folder in `.spicetify` and run :
+Finally, change your wallpaper with waypaper so that the command gets ran. 
 
-```sh
-git clone https://github.com/Comfy-Themes/Spicetify
-```
-
-Rename the folder to `Comfy` and run these commands to apply :
-
-```powershell
-spicetify config current_theme Comfy
-spicetify config color_scheme <option>
-spicetify config inject_css 1 replace_colors 1 overwrite_assets 1 inject_theme_js 1
-spicetify apply
-```
-
-#### choosing color_scheme
-To choose the perfect color for your setup you can look at images [here](https://github.com/Comfy-Themes/Spicetify/tree/main/images/color-schemes)!
-The color schemes with folders like [here](https://github.com/Comfy-Themes/Spicetify/tree/main/images/color-schemes/rose-pine) ussually means you need to combine 
-
-{folder_name}-{file_name}
-you can find all available color_schemes in the [colot.ini](https://github.com/Comfy-Themes/Spicetify/blob/main/Comfy/color.ini) file.
-```powershell
-spicetify config color_scheme rose-pine-moon
-```
-
-### ⚠️️ Warning
-
----
-
-The theme automatically updates for users using the version of Spicetify equals or greater than `2.8.2`, however, for the users that don't want to update Spicetify to the newest version:
-
-1. Go [here](https://comfy-themes.github.io/Spicetify/Comfy/theme.script.js)
-2. Copy the whole code (sorry for the flashbang)
-3. Go into the Spicetify/themes/Comfy folder.
-4. Open the `theme.js` file, paste the code and **save it**
-5. Afterwards, in a terminal, run `spicetify apply`
-6. Enjoy !
-
-For the users that don't want to update Spicetify to the newest version, do the same with [this](https://comfy-themes.github.io/Spicetify/Comfy/app.css) and paste it in the `user.css` replacing the `@import`.
-
-### 🖌️ Customization
-
----
-
-Go into your theme folder and open either :
-
-`color.ini` for the colors
-
-`user.css` for styling
-
-`theme.js` for settings
-
-### ♥ Donation Guide
-
----
-
-Thinking of donating? Please consider what you value most when deciding who to donate to:
-
-- Theme & Extension Maintenance - [OhItsTom](https://ko-fi.com/ohitstom)
-- Theme Design - [Nyria](https://ko-fi.com/nyria)
+Re-open the music player app. If your theme doesn't show, you should head to the Settings icon near the top right, click the drop-down menu for the color scheme, and select hellwal. 
