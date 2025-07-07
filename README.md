@@ -1,5 +1,7 @@
 # Installation
 
+Follow the normal installation process for Comfy spicetify. 
+
 Clone this repository.
 
 ```
